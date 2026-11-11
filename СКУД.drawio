@@ -1,4 +1,4 @@
-<mxfile host="Electron" pages="10">
+<mxfile host="Electron" pages="13">
   <diagram name="ЛР1 — МПО" id="NzoHc7vrVsI1Dn-hWLzI">
     <mxGraphModel dx="1972" dy="1285" grid="0" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1800" pageHeight="1400" background="#ffffff" math="0" shadow="0">
       <root>
@@ -1969,4 +1969,333 @@
       <mxCell id="r1" value="" style="edgeStyle=none;html=1;rounded=0;strokeColor=#000000;dashed=1;endArrow=open;endFill=0;endSize=8;" edge="1" parent="1"><mxGeometry relative="1" as="geometry"><mxPoint x="1084.0" y="302" as="sourcePoint" /><mxPoint x="366.0" y="302" as="targetPoint" /></mxGeometry></mxCell><mxCell id="r2" value="" style="edgeStyle=none;html=1;rounded=0;strokeColor=#000000;dashed=1;endArrow=open;endFill=0;endSize=8;" edge="1" parent="1"><mxGeometry relative="1" as="geometry"><mxPoint x="354.0" y="310" as="sourcePoint" /><mxPoint x="20" y="310" as="targetPoint" /></mxGeometry></mxCell></root>
     </mxGraphModel>
   </diagram>
+  <diagram name="ЛР3 — ДВИ PERCo-Web" id="lr3-perco">
+    <mxGraphModel background="#ffffff" dx="1139" dy="639" grid="0" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="0" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0" adaptiveColors="auto">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="lr3-perco-2" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=none;strokeColor=#000000;verticalAlign=top;align=left;spacingLeft=10;spacingTop=4;fontStyle=1;fontSize=14;fontColor=#000000;" value="СКУД PERCo-Web" vertex="1">
+          <mxGeometry x="170" y="10" width="640" height="1370" as="geometry" />
+        </mxCell>
+        <mxCell id="lr3-perco-3" parent="1" style="shape=umlActor;verticalLabelPosition=middle;labelPosition=left;align=right;verticalAlign=middle;html=1;outlineConnect=0;strokeColor=#000000;fillColor=#ffffff;fontColor=#000000;fontSize=13;" value="Владелец&lt;br&gt;пропуска" vertex="1">
+          <mxGeometry x="45" y="40" width="30" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="lr3-perco-4" parent="1" style="shape=umlActor;verticalLabelPosition=middle;labelPosition=left;align=right;verticalAlign=middle;html=1;outlineConnect=0;strokeColor=#000000;fillColor=#ffffff;fontColor=#000000;fontSize=13;" value="Сотрудник&lt;br&gt;отдела&lt;br&gt;персонала" vertex="1">
+          <mxGeometry x="45" y="365" width="30" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="lr3-perco-5" parent="1" style="shape=umlActor;verticalLabelPosition=middle;labelPosition=left;align=right;verticalAlign=middle;html=1;outlineConnect=0;strokeColor=#000000;fillColor=#ffffff;fontColor=#000000;fontSize=13;" value="Сотрудник&lt;br&gt;бюро&lt;br&gt;пропусков" vertex="1">
+          <mxGeometry x="45" y="980" width="30" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="lr3-perco-6" parent="1" style="shape=umlActor;verticalLabelPosition=middle;labelPosition=right;align=left;verticalAlign=middle;html=1;outlineConnect=0;strokeColor=#000000;fillColor=#ffffff;fontColor=#000000;fontSize=13;" value="Оператор&lt;br&gt;КПП" vertex="1">
+          <mxGeometry x="905" y="260" width="30" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="lr3-perco-7" parent="1" style="shape=umlActor;verticalLabelPosition=middle;labelPosition=right;align=left;verticalAlign=middle;html=1;outlineConnect=0;strokeColor=#000000;fillColor=#ffffff;fontColor=#000000;fontSize=13;" value="Администратор" vertex="1">
+          <mxGeometry x="905" y="532" width="30" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="lr3-perco-8" parent="1" style="ellipse;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#000000;fontColor=#000000;fontSize=12;" value="Пройти через точку доступа" vertex="1">
+          <mxGeometry x="195" y="39" width="210" height="62" as="geometry" />
+        </mxCell>
+        <mxCell id="lr3-perco-9" parent="1" style="ellipse;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#000000;fontColor=#000000;fontSize=12;" value="Проверить права доступа" vertex="1">
+          <mxGeometry x="545" y="39" width="210" height="62" as="geometry" />
+        </mxCell>
+        <mxCell id="lr3-perco-10" parent="1" style="ellipse;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#000000;fontColor=#000000;fontSize=12;" value="Подтвердить проход (верификация)" vertex="1">
+          <mxGeometry x="545" y="129" width="210" height="62" as="geometry" />
+        </mxCell>
+        <mxCell id="lr3-perco-11" parent="1" source="lr3-perco-8" target="lr3-perco-9" style="edgeStyle=none;html=1;rounded=0;strokeColor=#000000;dashed=1;endArrow=open;endFill=0;endSize=8;labelBackgroundColor=#ffffff;fontSize=11;fontColor=#000000;" value="«include»" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="lr3-perco-12" parent="1" source="lr3-perco-10" target="lr3-perco-8" style="edgeStyle=none;html=1;rounded=0;strokeColor=#000000;dashed=1;endArrow=open;endFill=0;endSize=8;labelBackgroundColor=#ffffff;fontSize=11;fontColor=#000000;" value="«extend»" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="lr3-perco-13" parent="1" source="lr3-perco-3" target="lr3-perco-8" style="edgeStyle=elbowEdgeStyle;elbow=horizontal;html=1;rounded=0;strokeColor=#000000;endArrow=none;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" value="" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="lr3-perco-14" parent="1" style="ellipse;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#000000;fontColor=#000000;fontSize=12;" value="Просмотреть отчет о проходах" vertex="1">
+          <mxGeometry x="545" y="214" width="210" height="62" as="geometry" />
+        </mxCell>
+        <mxCell id="lr3-perco-15" parent="1" style="ellipse;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#000000;fontColor=#000000;fontSize=12;" value="Подать команду устройству" vertex="1">
+          <mxGeometry x="545" y="299" width="210" height="62" as="geometry" />
+        </mxCell>
+        <mxCell id="lr3-perco-16" parent="1" style="ellipse;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#000000;fontColor=#000000;fontSize=12;" value="Наблюдать за событиями на плане помещений" vertex="1">
+          <mxGeometry x="545" y="382" width="210" height="66" as="geometry" />
+        </mxCell>
+        <mxCell id="lr3-perco-17" parent="1" source="lr3-perco-6" target="lr3-perco-10" style="edgeStyle=elbowEdgeStyle;elbow=horizontal;html=1;rounded=0;strokeColor=#000000;endArrow=none;exitX=0;exitY=0.5;exitDx=0;exitDy=0;entryX=1;entryY=0.5;entryDx=0;entryDy=0;" value="" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="lr3-perco-18" parent="1" source="lr3-perco-6" target="lr3-perco-14" style="edgeStyle=elbowEdgeStyle;elbow=horizontal;html=1;rounded=0;strokeColor=#000000;endArrow=none;exitX=0;exitY=0.5;exitDx=0;exitDy=0;entryX=1;entryY=0.5;entryDx=0;entryDy=0;" value="" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="lr3-perco-19" parent="1" source="lr3-perco-6" target="lr3-perco-15" style="edgeStyle=elbowEdgeStyle;elbow=horizontal;html=1;rounded=0;strokeColor=#000000;endArrow=none;exitX=0;exitY=0.5;exitDx=0;exitDy=0;entryX=1;entryY=0.5;entryDx=0;entryDy=0;" value="" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="lr3-perco-20" parent="1" source="lr3-perco-6" target="lr3-perco-16" style="edgeStyle=elbowEdgeStyle;elbow=horizontal;html=1;rounded=0;strokeColor=#000000;endArrow=none;exitX=0;exitY=0.5;exitDx=0;exitDy=0;entryX=1;entryY=0.5;entryDx=0;entryDy=0;" value="" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="lr3-perco-21" parent="1" style="ellipse;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#000000;fontColor=#000000;fontSize=12;" value="«CRUD» Сотрудник" vertex="1">
+          <mxGeometry x="195" y="169" width="210" height="62" as="geometry" />
+        </mxCell>
+        <mxCell id="lr3-perco-22" parent="1" style="ellipse;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#000000;fontColor=#000000;fontSize=12;" value="Импортировать сотрудников из XLS" vertex="1">
+          <mxGeometry x="195" y="269" width="210" height="62" as="geometry" />
+        </mxCell>
+        <mxCell id="lr3-perco-23" parent="1" source="lr3-perco-22" target="lr3-perco-21" style="edgeStyle=none;html=1;rounded=0;strokeColor=#000000;dashed=1;endArrow=open;endFill=0;endSize=8;labelBackgroundColor=#ffffff;fontSize=11;fontColor=#000000;" value="«extend»" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="lr3-perco-24" parent="1" style="ellipse;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#000000;fontColor=#000000;fontSize=12;" value="«CRUD» Подразделение" vertex="1">
+          <mxGeometry x="195" y="364" width="210" height="62" as="geometry" />
+        </mxCell>
+        <mxCell id="lr3-perco-25" parent="1" style="ellipse;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#000000;fontColor=#000000;fontSize=12;" value="«CRUD» Должность" vertex="1">
+          <mxGeometry x="195" y="444" width="210" height="62" as="geometry" />
+        </mxCell>
+        <mxCell id="lr3-perco-26" parent="1" style="ellipse;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#000000;fontColor=#000000;fontSize=12;" value="Вести календарь праздничных дней" vertex="1">
+          <mxGeometry x="195" y="524" width="210" height="62" as="geometry" />
+        </mxCell>
+        <mxCell id="lr3-perco-27" parent="1" source="lr3-perco-4" target="lr3-perco-21" style="edgeStyle=elbowEdgeStyle;elbow=horizontal;html=1;rounded=0;strokeColor=#000000;endArrow=none;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" value="" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="lr3-perco-28" parent="1" source="lr3-perco-4" target="lr3-perco-24" style="edgeStyle=elbowEdgeStyle;elbow=horizontal;html=1;rounded=0;strokeColor=#000000;endArrow=none;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" value="" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="lr3-perco-29" parent="1" source="lr3-perco-4" target="lr3-perco-25" style="edgeStyle=elbowEdgeStyle;elbow=horizontal;html=1;rounded=0;strokeColor=#000000;endArrow=none;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" value="" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="lr3-perco-30" parent="1" source="lr3-perco-4" target="lr3-perco-26" style="edgeStyle=elbowEdgeStyle;elbow=horizontal;html=1;rounded=0;strokeColor=#000000;endArrow=none;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" value="" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="lr3-perco-31" parent="1" style="ellipse;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#000000;fontColor=#000000;fontSize=12;" value="Настроить конфигурацию системы" vertex="1">
+          <mxGeometry x="545" y="489" width="210" height="62" as="geometry" />
+        </mxCell>
+        <mxCell id="lr3-perco-32" parent="1" style="ellipse;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#000000;fontColor=#000000;fontSize=12;" value="«CRUD» Оператор и его роль" vertex="1">
+          <mxGeometry x="545" y="574" width="210" height="62" as="geometry" />
+        </mxCell>
+        <mxCell id="lr3-perco-33" parent="1" source="lr3-perco-7" target="lr3-perco-31" style="edgeStyle=elbowEdgeStyle;elbow=horizontal;html=1;rounded=0;strokeColor=#000000;endArrow=none;exitX=0;exitY=0.5;exitDx=0;exitDy=0;entryX=1;entryY=0.5;entryDx=0;entryDy=0;" value="" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="lr3-perco-34" parent="1" source="lr3-perco-7" target="lr3-perco-32" style="edgeStyle=elbowEdgeStyle;elbow=horizontal;html=1;rounded=0;strokeColor=#000000;endArrow=none;exitX=0;exitY=0.5;exitDx=0;exitDy=0;entryX=1;entryY=0.5;entryDx=0;entryDy=0;" value="" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="lr3-perco-35" parent="1" style="ellipse;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#000000;fontColor=#000000;fontSize=12;" value="Оформить пропуск сотруднику" vertex="1">
+          <mxGeometry x="195" y="634" width="210" height="62" as="geometry" />
+        </mxCell>
+        <mxCell id="lr3-perco-36" parent="1" style="ellipse;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#000000;fontColor=#000000;fontSize=12;" value="Оформить пропуск посетителю" vertex="1">
+          <mxGeometry x="195" y="814" width="210" height="62" as="geometry" />
+        </mxCell>
+        <mxCell id="lr3-perco-37" parent="1" style="ellipse;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#000000;fontColor=#000000;fontSize=12;" value="Напечатать пропуск" vertex="1">
+          <mxGeometry x="195" y="724" width="210" height="62" as="geometry" />
+        </mxCell>
+        <mxCell id="lr3-perco-38" parent="1" source="lr3-perco-37" target="lr3-perco-35" style="edgeStyle=none;html=1;rounded=0;strokeColor=#000000;dashed=1;endArrow=open;endFill=0;endSize=8;labelBackgroundColor=#ffffff;fontSize=11;fontColor=#000000;" value="«extend»" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="lr3-perco-39" parent="1" source="lr3-perco-37" target="lr3-perco-36" style="edgeStyle=none;html=1;rounded=0;strokeColor=#000000;dashed=1;endArrow=open;endFill=0;endSize=8;labelBackgroundColor=#ffffff;fontSize=11;fontColor=#000000;" value="«extend»" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="lr3-perco-40" parent="1" style="ellipse;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#000000;fontColor=#000000;fontSize=12;fontStyle=2;" value="Выдать идентификатор" vertex="1">
+          <mxGeometry x="545" y="724" width="210" height="62" as="geometry" />
+        </mxCell>
+        <mxCell id="lr3-perco-41" parent="1" source="lr3-perco-35" target="lr3-perco-40" style="edgeStyle=none;html=1;rounded=0;strokeColor=#000000;dashed=1;endArrow=open;endFill=0;endSize=8;labelBackgroundColor=#ffffff;fontSize=11;fontColor=#000000;" value="«include»" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="lr3-perco-42" parent="1" source="lr3-perco-36" target="lr3-perco-40" style="edgeStyle=none;html=1;rounded=0;strokeColor=#000000;dashed=1;endArrow=open;endFill=0;endSize=8;labelBackgroundColor=#ffffff;fontSize=11;fontColor=#000000;" value="«include»" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="lr3-perco-43" parent="1" style="ellipse;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#000000;fontColor=#000000;fontSize=12;" value="Выдать карту доступа" vertex="1">
+          <mxGeometry x="230" y="929" width="180" height="62" as="geometry" />
+        </mxCell>
+        <mxCell id="lr3-perco-44" parent="1" source="lr3-perco-43" target="lr3-perco-40" style="edgeStyle=none;html=1;rounded=0;strokeColor=#000000;endArrow=block;endFill=0;endSize=12;" value="" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="lr3-perco-45" parent="1" style="ellipse;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#000000;fontColor=#000000;fontSize=12;" value="Выдать штрихкод или QR-код" vertex="1">
+          <mxGeometry x="420" y="929" width="180" height="62" as="geometry" />
+        </mxCell>
+        <mxCell id="lr3-perco-46" parent="1" source="lr3-perco-45" target="lr3-perco-40" style="edgeStyle=none;html=1;rounded=0;strokeColor=#000000;endArrow=block;endFill=0;endSize=12;" value="" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="lr3-perco-47" parent="1" style="ellipse;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#000000;fontColor=#000000;fontSize=12;" value="Внести биометрические данные" vertex="1">
+          <mxGeometry x="615" y="929" width="180" height="62" as="geometry" />
+        </mxCell>
+        <mxCell id="lr3-perco-48" parent="1" source="lr3-perco-47" target="lr3-perco-40" style="edgeStyle=none;html=1;rounded=0;strokeColor=#000000;endArrow=block;endFill=0;endSize=12;" value="" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="lr3-perco-49" parent="1" style="ellipse;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#000000;fontColor=#000000;fontSize=12;" value="Заблокировать или разблокировать доступ" vertex="1">
+          <mxGeometry x="195" y="1044" width="210" height="62" as="geometry" />
+        </mxCell>
+        <mxCell id="lr3-perco-50" parent="1" style="ellipse;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#000000;fontColor=#000000;fontSize=12;" value="Изъять идентификатор" vertex="1">
+          <mxGeometry x="195" y="1129" width="210" height="62" as="geometry" />
+        </mxCell>
+        <mxCell id="lr3-perco-51" parent="1" style="ellipse;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#000000;fontColor=#000000;fontSize=12;" value="«CRUD» Шаблон доступа" vertex="1">
+          <mxGeometry x="195" y="1214" width="210" height="62" as="geometry" />
+        </mxCell>
+        <mxCell id="lr3-perco-52" parent="1" style="ellipse;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#000000;fontColor=#000000;fontSize=12;" value="«CRUD» Временной критерий доступа" vertex="1">
+          <mxGeometry x="195" y="1299" width="210" height="62" as="geometry" />
+        </mxCell>
+        <mxCell id="lr3-perco-53" parent="1" source="lr3-perco-5" target="lr3-perco-35" style="edgeStyle=elbowEdgeStyle;elbow=horizontal;html=1;rounded=0;strokeColor=#000000;endArrow=none;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" value="" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="lr3-perco-54" parent="1" source="lr3-perco-5" target="lr3-perco-36" style="edgeStyle=elbowEdgeStyle;elbow=horizontal;html=1;rounded=0;strokeColor=#000000;endArrow=none;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" value="" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="lr3-perco-55" parent="1" source="lr3-perco-5" target="lr3-perco-49" style="edgeStyle=elbowEdgeStyle;elbow=horizontal;html=1;rounded=0;strokeColor=#000000;endArrow=none;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" value="" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="lr3-perco-56" parent="1" source="lr3-perco-5" target="lr3-perco-50" style="edgeStyle=elbowEdgeStyle;elbow=horizontal;html=1;rounded=0;strokeColor=#000000;endArrow=none;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" value="" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="lr3-perco-57" parent="1" source="lr3-perco-5" target="lr3-perco-51" style="edgeStyle=elbowEdgeStyle;elbow=horizontal;html=1;rounded=0;strokeColor=#000000;endArrow=none;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" value="" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="lr3-perco-58" parent="1" source="lr3-perco-5" target="lr3-perco-52" style="edgeStyle=elbowEdgeStyle;elbow=horizontal;html=1;rounded=0;strokeColor=#000000;endArrow=none;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" value="" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+  <diagram name="ЛР3 — ДВИ Kisi" id="lr3-kisi">
+    <mxGraphModel background="#ffffff" dx="1139" dy="639" grid="0" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="0" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0" adaptiveColors="auto">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="lr3-kisi-2" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=none;strokeColor=#000000;verticalAlign=top;align=left;spacingLeft=10;spacingTop=4;fontStyle=1;fontSize=14;fontColor=#000000;" value="СКУД Kisi" vertex="1">
+          <mxGeometry x="170" y="10" width="620" height="1340" as="geometry" />
+        </mxCell>
+        <mxCell id="lr3-kisi-3" parent="1" style="shape=umlActor;verticalLabelPosition=middle;labelPosition=left;align=right;verticalAlign=middle;html=1;outlineConnect=0;strokeColor=#000000;fillColor=#ffffff;fontColor=#000000;fontSize=13;" value="Пользователь" vertex="1">
+          <mxGeometry x="45" y="200" width="30" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="lr3-kisi-4" parent="1" style="shape=umlActor;verticalLabelPosition=middle;labelPosition=left;align=right;verticalAlign=middle;html=1;outlineConnect=0;strokeColor=#000000;fillColor=#ffffff;fontColor=#000000;fontSize=13;" value="Администратор" vertex="1">
+          <mxGeometry x="45" y="855" width="30" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="lr3-kisi-5" parent="1" source="lr3-kisi-4" target="lr3-kisi-3" style="edgeStyle=none;html=1;rounded=0;strokeColor=#000000;endArrow=block;endFill=0;endSize=12;" value="" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="lr3-kisi-6" parent="1" style="shape=umlActor;verticalLabelPosition=middle;labelPosition=right;align=left;verticalAlign=middle;html=1;outlineConnect=0;strokeColor=#000000;fillColor=#ffffff;fontColor=#000000;fontSize=13;" value="Посетитель" vertex="1">
+          <mxGeometry x="885" y="450" width="30" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="lr3-kisi-7" parent="1" style="ellipse;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#000000;fontColor=#000000;fontSize=12;" value="Пройти в помещение" vertex="1">
+          <mxGeometry x="195" y="49" width="210" height="62" as="geometry" />
+        </mxCell>
+        <mxCell id="lr3-kisi-8" parent="1" style="ellipse;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#000000;fontColor=#000000;fontSize=12;" value="Подтвердить личность на телефоне" vertex="1">
+          <mxGeometry x="515" y="49" width="210" height="62" as="geometry" />
+        </mxCell>
+        <mxCell id="lr3-kisi-9" parent="1" source="lr3-kisi-8" target="lr3-kisi-7" style="edgeStyle=none;html=1;rounded=0;strokeColor=#000000;dashed=1;endArrow=open;endFill=0;endSize=8;labelBackgroundColor=#ffffff;fontSize=11;fontColor=#000000;" value="«extend»" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="lr3-kisi-10" parent="1" style="ellipse;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#000000;fontColor=#000000;fontSize=12;fontStyle=2;" value="Предъявить учетные данные" vertex="1">
+          <mxGeometry x="195" y="251" width="210" height="62" as="geometry" />
+        </mxCell>
+        <mxCell id="lr3-kisi-11" parent="1" source="lr3-kisi-7" target="lr3-kisi-10" style="edgeStyle=none;html=1;rounded=0;strokeColor=#000000;dashed=1;endArrow=open;endFill=0;endSize=8;labelBackgroundColor=#ffffff;fontSize=11;fontColor=#000000;" value="«include»" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="lr3-kisi-12" parent="1" style="ellipse;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#000000;fontColor=#000000;fontSize=12;" value="Открыть дверь в приложении" vertex="1">
+          <mxGeometry x="520" y="141" width="200" height="58" as="geometry" />
+        </mxCell>
+        <mxCell id="lr3-kisi-13" parent="1" source="lr3-kisi-12" target="lr3-kisi-10" style="edgeStyle=elbowEdgeStyle;elbow=horizontal;html=1;rounded=0;strokeColor=#000000;endArrow=block;endFill=0;endSize=12;exitX=0;exitY=0.5;exitDx=0;exitDy=0;entryX=1;entryY=0.5;entryDx=0;entryDy=0;" value="" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="lr3-kisi-14" parent="1" style="ellipse;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#000000;fontColor=#000000;fontSize=12;" value="Приложить телефон к считывателю" vertex="1">
+          <mxGeometry x="520" y="216" width="200" height="58" as="geometry" />
+        </mxCell>
+        <mxCell id="lr3-kisi-15" parent="1" source="lr3-kisi-14" target="lr3-kisi-10" style="edgeStyle=elbowEdgeStyle;elbow=horizontal;html=1;rounded=0;strokeColor=#000000;endArrow=block;endFill=0;endSize=12;exitX=0;exitY=0.5;exitDx=0;exitDy=0;entryX=1;entryY=0.5;entryDx=0;entryDy=0;" value="" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="lr3-kisi-16" parent="1" style="ellipse;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#000000;fontColor=#000000;fontSize=12;" value="Поднести руку к считывателю" vertex="1">
+          <mxGeometry x="520" y="291" width="200" height="58" as="geometry" />
+        </mxCell>
+        <mxCell id="lr3-kisi-17" parent="1" source="lr3-kisi-16" target="lr3-kisi-10" style="edgeStyle=elbowEdgeStyle;elbow=horizontal;html=1;rounded=0;strokeColor=#000000;endArrow=block;endFill=0;endSize=12;exitX=0;exitY=0.5;exitDx=0;exitDy=0;entryX=1;entryY=0.5;entryDx=0;entryDy=0;" value="" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="lr3-kisi-18" parent="1" style="ellipse;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#000000;fontColor=#000000;fontSize=12;" value="Приложить карту или брелок" vertex="1">
+          <mxGeometry x="520" y="366" width="200" height="58" as="geometry" />
+        </mxCell>
+        <mxCell id="lr3-kisi-19" parent="1" source="lr3-kisi-18" target="lr3-kisi-10" style="edgeStyle=elbowEdgeStyle;elbow=horizontal;html=1;rounded=0;strokeColor=#000000;endArrow=block;endFill=0;endSize=12;exitX=0;exitY=0.5;exitDx=0;exitDy=0;entryX=1;entryY=0.5;entryDx=0;entryDy=0;" value="" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="lr3-kisi-20" parent="1" style="ellipse;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#000000;fontColor=#000000;fontSize=12;" value="Посмотреть доступные двери" vertex="1">
+          <mxGeometry x="195" y="359" width="210" height="62" as="geometry" />
+        </mxCell>
+        <mxCell id="lr3-kisi-21" parent="1" source="lr3-kisi-3" target="lr3-kisi-7" style="edgeStyle=elbowEdgeStyle;elbow=horizontal;html=1;rounded=0;strokeColor=#000000;endArrow=none;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" value="" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="lr3-kisi-22" parent="1" source="lr3-kisi-3" target="lr3-kisi-20" style="edgeStyle=elbowEdgeStyle;elbow=horizontal;html=1;rounded=0;strokeColor=#000000;endArrow=none;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" value="" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="lr3-kisi-23" parent="1" style="ellipse;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#000000;fontColor=#000000;fontSize=12;" value="Открыть дверь по ссылке доступа" vertex="1">
+          <mxGeometry x="515" y="449" width="210" height="62" as="geometry" />
+        </mxCell>
+        <mxCell id="lr3-kisi-24" parent="1" source="lr3-kisi-6" target="lr3-kisi-23" style="edgeStyle=elbowEdgeStyle;elbow=horizontal;html=1;rounded=0;strokeColor=#000000;endArrow=none;exitX=0;exitY=0.5;exitDx=0;exitDy=0;entryX=1;entryY=0.5;entryDx=0;entryDy=0;" value="" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="lr3-kisi-25" parent="1" style="ellipse;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#000000;fontColor=#000000;fontSize=12;" value="«CRUD» Пользователь" vertex="1">
+          <mxGeometry x="195" y="449" width="210" height="62" as="geometry" />
+        </mxCell>
+        <mxCell id="lr3-kisi-26" parent="1" style="ellipse;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#000000;fontColor=#000000;fontSize=12;" value="«CRUD» Группа доступа" vertex="1">
+          <mxGeometry x="195" y="539" width="210" height="62" as="geometry" />
+        </mxCell>
+        <mxCell id="lr3-kisi-27" parent="1" style="ellipse;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#000000;fontColor=#000000;fontSize=12;" value="Настроить расписание доступа" vertex="1">
+          <mxGeometry x="515" y="539" width="210" height="62" as="geometry" />
+        </mxCell>
+        <mxCell id="lr3-kisi-28" parent="1" source="lr3-kisi-27" target="lr3-kisi-26" style="edgeStyle=none;html=1;rounded=0;strokeColor=#000000;dashed=1;endArrow=open;endFill=0;endSize=8;labelBackgroundColor=#ffffff;fontSize=11;fontColor=#000000;" value="«extend»" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="lr3-kisi-29" parent="1" style="ellipse;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#000000;fontColor=#000000;fontSize=12;" value="Выдать или отозвать доступ" vertex="1">
+          <mxGeometry x="195" y="629" width="210" height="62" as="geometry" />
+        </mxCell>
+        <mxCell id="lr3-kisi-30" parent="1" style="ellipse;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#000000;fontColor=#000000;fontSize=12;" value="Отправить ссылку доступа посетителю" vertex="1">
+          <mxGeometry x="195" y="719" width="210" height="62" as="geometry" />
+        </mxCell>
+        <mxCell id="lr3-kisi-31" parent="1" style="ellipse;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#000000;fontColor=#000000;fontSize=12;" value="Настроить расписание разблокировки двери" vertex="1">
+          <mxGeometry x="195" y="809" width="210" height="62" as="geometry" />
+        </mxCell>
+        <mxCell id="lr3-kisi-32" parent="1" style="ellipse;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#000000;fontColor=#000000;fontSize=12;" value="Открыть дверь удаленно" vertex="1">
+          <mxGeometry x="195" y="899" width="210" height="62" as="geometry" />
+        </mxCell>
+        <mxCell id="lr3-kisi-33" parent="1" style="ellipse;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#000000;fontColor=#000000;fontSize=12;" value="Заблокировать дверь или помещение" vertex="1">
+          <mxGeometry x="195" y="989" width="210" height="62" as="geometry" />
+        </mxCell>
+        <mxCell id="lr3-kisi-34" parent="1" style="ellipse;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#000000;fontColor=#000000;fontSize=12;" value="Просмотреть журнал событий" vertex="1">
+          <mxGeometry x="195" y="1079" width="210" height="62" as="geometry" />
+        </mxCell>
+        <mxCell id="lr3-kisi-35" parent="1" style="ellipse;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#000000;fontColor=#000000;fontSize=12;" value="Отфильтровать события" vertex="1">
+          <mxGeometry x="515" y="1079" width="210" height="62" as="geometry" />
+        </mxCell>
+        <mxCell id="lr3-kisi-36" parent="1" source="lr3-kisi-35" target="lr3-kisi-34" style="edgeStyle=none;html=1;rounded=0;strokeColor=#000000;dashed=1;endArrow=open;endFill=0;endSize=8;labelBackgroundColor=#ffffff;fontSize=11;fontColor=#000000;" value="«extend»" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="lr3-kisi-37" parent="1" style="ellipse;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#000000;fontColor=#000000;fontSize=12;" value="Получить оповещение о вторжении" vertex="1">
+          <mxGeometry x="195" y="1169" width="210" height="62" as="geometry" />
+        </mxCell>
+        <mxCell id="lr3-kisi-38" parent="1" style="ellipse;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#000000;fontColor=#000000;fontSize=12;" value="Сформировать отчет о присутствии" vertex="1">
+          <mxGeometry x="195" y="1259" width="210" height="62" as="geometry" />
+        </mxCell>
+        <mxCell id="lr3-kisi-39" parent="1" source="lr3-kisi-4" target="lr3-kisi-25" style="edgeStyle=elbowEdgeStyle;elbow=horizontal;html=1;rounded=0;strokeColor=#000000;endArrow=none;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" value="" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="lr3-kisi-40" parent="1" source="lr3-kisi-4" target="lr3-kisi-26" style="edgeStyle=elbowEdgeStyle;elbow=horizontal;html=1;rounded=0;strokeColor=#000000;endArrow=none;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" value="" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="lr3-kisi-41" parent="1" source="lr3-kisi-4" target="lr3-kisi-29" style="edgeStyle=elbowEdgeStyle;elbow=horizontal;html=1;rounded=0;strokeColor=#000000;endArrow=none;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" value="" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="lr3-kisi-42" parent="1" source="lr3-kisi-4" target="lr3-kisi-30" style="edgeStyle=elbowEdgeStyle;elbow=horizontal;html=1;rounded=0;strokeColor=#000000;endArrow=none;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" value="" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="lr3-kisi-43" parent="1" source="lr3-kisi-4" target="lr3-kisi-31" style="edgeStyle=elbowEdgeStyle;elbow=horizontal;html=1;rounded=0;strokeColor=#000000;endArrow=none;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" value="" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="lr3-kisi-44" parent="1" source="lr3-kisi-4" target="lr3-kisi-32" style="edgeStyle=elbowEdgeStyle;elbow=horizontal;html=1;rounded=0;strokeColor=#000000;endArrow=none;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" value="" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="lr3-kisi-45" parent="1" source="lr3-kisi-4" target="lr3-kisi-33" style="edgeStyle=elbowEdgeStyle;elbow=horizontal;html=1;rounded=0;strokeColor=#000000;endArrow=none;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" value="" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="lr3-kisi-46" parent="1" source="lr3-kisi-4" target="lr3-kisi-34" style="edgeStyle=elbowEdgeStyle;elbow=horizontal;html=1;rounded=0;strokeColor=#000000;endArrow=none;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" value="" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="lr3-kisi-47" parent="1" source="lr3-kisi-4" target="lr3-kisi-37" style="edgeStyle=elbowEdgeStyle;elbow=horizontal;html=1;rounded=0;strokeColor=#000000;endArrow=none;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" value="" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="lr3-kisi-48" parent="1" source="lr3-kisi-4" target="lr3-kisi-38" style="edgeStyle=elbowEdgeStyle;elbow=horizontal;html=1;rounded=0;strokeColor=#000000;endArrow=none;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" value="" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+  <diagram name="ЛР3 — ДВИ нашего проекта" id="lr3-nash-page"><mxGraphModel background="#ffffff" dx="1139" dy="639" grid="0" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="0" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0"><root><mxCell id="0" /><mxCell id="1" parent="0" /><mxCell id="lr3-nash-2" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=none;strokeColor=#000000;verticalAlign=top;align=left;spacingLeft=10;spacingTop=4;fontStyle=1;fontSize=14;fontColor=#000000;" value="СКУД" vertex="1"><mxGeometry x="200" y="10" width="900" height="1330" as="geometry" /></mxCell><mxCell id="lr3-nash-3" parent="1" style="shape=umlActor;verticalLabelPosition=middle;labelPosition=left;align=right;verticalAlign=middle;html=1;outlineConnect=0;strokeColor=#000000;fillColor=#ffffff;fontColor=#000000;fontSize=13;" value="Сотрудник" vertex="1"><mxGeometry x="60" y="120" width="30" height="60" as="geometry" /></mxCell><mxCell id="lr3-nash-4" parent="1" style="shape=umlActor;verticalLabelPosition=middle;labelPosition=left;align=right;verticalAlign=middle;html=1;outlineConnect=0;strokeColor=#000000;fillColor=#ffffff;fontColor=#000000;fontSize=13;" value="Охранник" vertex="1"><mxGeometry x="60" y="590" width="30" height="60" as="geometry" /></mxCell><mxCell id="lr3-nash-5" parent="1" style="shape=umlActor;verticalLabelPosition=middle;labelPosition=left;align=right;verticalAlign=middle;html=1;outlineConnect=0;strokeColor=#000000;fillColor=#ffffff;fontColor=#000000;fontSize=13;" value="Администратор" vertex="1"><mxGeometry x="60" y="1080" width="30" height="60" as="geometry" /></mxCell><mxCell id="lr3-nash-6" parent="1" style="shape=umlActor;verticalLabelPosition=middle;labelPosition=right;align=left;verticalAlign=middle;html=1;outlineConnect=0;strokeColor=#000000;fillColor=#ffffff;fontColor=#000000;fontSize=13;" value="Пожарная&lt;br&gt;сигнализация" vertex="1"><mxGeometry x="1150" y="700" width="30" height="60" as="geometry" /></mxCell><mxCell id="lr3-nash-7" parent="1" style="ellipse;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#000000;fontColor=#000000;fontSize=12;" value="Пройти через дверь" vertex="1"><mxGeometry x="230" y="90" width="220" height="60" as="geometry" /></mxCell><mxCell id="lr3-nash-8" parent="1" style="ellipse;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#000000;fontColor=#000000;fontSize=12;" value="Подать сигнал отказа" vertex="1"><mxGeometry x="230" y="230" width="220" height="60" as="geometry" /></mxCell><mxCell id="lr3-nash-9" parent="1" style="ellipse;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#000000;fontColor=#000000;fontSize=12;" value="Проверить доступ" vertex="1"><mxGeometry x="620" y="30" width="220" height="60" as="geometry" /></mxCell><mxCell id="lr3-nash-10" parent="1" style="ellipse;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#000000;fontColor=#000000;fontSize=12;" value="Записать проход в журнал" vertex="1"><mxGeometry x="620" y="120" width="220" height="60" as="geometry" /></mxCell><mxCell id="lr3-nash-11" parent="1" style="ellipse;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#000000;fontColor=#000000;fontSize=12;fontStyle=2;" value="Идентифицировать сотрудника" vertex="1"><mxGeometry x="620" y="215" width="220" height="60" as="geometry" /></mxCell><mxCell id="lr3-nash-12" parent="1" style="ellipse;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#000000;fontColor=#000000;fontSize=12;" value="Предъявить карту" vertex="1"><mxGeometry x="500" y="340" width="190" height="60" as="geometry" /></mxCell><mxCell id="lr3-nash-13" parent="1" style="ellipse;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#000000;fontColor=#000000;fontSize=12;" value="Предъявить биометрию" vertex="1"><mxGeometry x="780" y="340" width="200" height="60" as="geometry" /></mxCell><mxCell id="lr3-nash-14" parent="1" source="lr3-nash-7" target="lr3-nash-9" style="edgeStyle=none;html=1;rounded=0;strokeColor=#000000;dashed=1;endArrow=open;endFill=0;endSize=8;labelBackgroundColor=#ffffff;fontSize=11;fontColor=#000000;" value="«include»" edge="1"><mxGeometry relative="1" as="geometry" /></mxCell><mxCell id="lr3-nash-15" parent="1" source="lr3-nash-7" target="lr3-nash-10" style="edgeStyle=none;html=1;rounded=0;strokeColor=#000000;dashed=1;endArrow=open;endFill=0;endSize=8;labelBackgroundColor=#ffffff;fontSize=11;fontColor=#000000;" value="«include»" edge="1"><mxGeometry relative="1" as="geometry" /></mxCell><mxCell id="lr3-nash-16" parent="1" source="lr3-nash-7" target="lr3-nash-11" style="edgeStyle=none;html=1;rounded=0;strokeColor=#000000;dashed=1;endArrow=open;endFill=0;endSize=8;labelBackgroundColor=#ffffff;fontSize=11;fontColor=#000000;" value="«include»" edge="1"><mxGeometry relative="1" as="geometry" /></mxCell><mxCell id="lr3-nash-17" parent="1" source="lr3-nash-8" target="lr3-nash-7" style="edgeStyle=none;html=1;rounded=0;strokeColor=#000000;dashed=1;endArrow=open;endFill=0;endSize=8;labelBackgroundColor=#ffffff;fontSize=11;fontColor=#000000;" value="«extend»" edge="1"><mxGeometry relative="1" as="geometry" /></mxCell><mxCell id="lr3-nash-18" parent="1" source="lr3-nash-12" target="lr3-nash-11" style="edgeStyle=none;html=1;rounded=0;strokeColor=#000000;endArrow=block;endFill=0;endSize=12;" value="" edge="1"><mxGeometry relative="1" as="geometry" /></mxCell><mxCell id="lr3-nash-19" parent="1" source="lr3-nash-13" target="lr3-nash-11" style="edgeStyle=none;html=1;rounded=0;strokeColor=#000000;endArrow=block;endFill=0;endSize=12;" value="" edge="1"><mxGeometry relative="1" as="geometry" /></mxCell><mxCell id="lr3-nash-20" parent="1" style="ellipse;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#000000;fontColor=#000000;fontSize=12;" value="Просмотреть журнал проходов" vertex="1"><mxGeometry x="230" y="500" width="220" height="60" as="geometry" /></mxCell><mxCell id="lr3-nash-21" parent="1" style="ellipse;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#000000;fontColor=#000000;fontSize=12;" value="Отфильтровать журнал" vertex="1"><mxGeometry x="620" y="500" width="220" height="60" as="geometry" /></mxCell><mxCell id="lr3-nash-22" parent="1" style="ellipse;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#000000;fontColor=#000000;fontSize=12;" value="Открыть дверь вручную" vertex="1"><mxGeometry x="230" y="620" width="220" height="60" as="geometry" /></mxCell><mxCell id="lr3-nash-23" parent="1" style="ellipse;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#000000;fontColor=#000000;fontSize=12;" value="Завершить аварийный режим" vertex="1"><mxGeometry x="230" y="740" width="220" height="60" as="geometry" /></mxCell><mxCell id="lr3-nash-24" parent="1" source="lr3-nash-21" target="lr3-nash-20" style="edgeStyle=none;html=1;rounded=0;strokeColor=#000000;dashed=1;endArrow=open;endFill=0;endSize=8;labelBackgroundColor=#ffffff;fontSize=11;fontColor=#000000;" value="«extend»" edge="1"><mxGeometry relative="1" as="geometry" /></mxCell><mxCell id="lr3-nash-25" parent="1" style="ellipse;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#000000;fontColor=#000000;fontSize=12;" value="Объявить аварию" vertex="1"><mxGeometry x="620" y="700" width="220" height="60" as="geometry" /></mxCell><mxCell id="lr3-nash-26" parent="1" style="ellipse;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#000000;fontColor=#000000;fontSize=12;" value="Открыть двери аварийных зон" vertex="1"><mxGeometry x="620" y="830" width="220" height="60" as="geometry" /></mxCell><mxCell id="lr3-nash-27" parent="1" source="lr3-nash-25" target="lr3-nash-26" style="edgeStyle=none;html=1;rounded=0;strokeColor=#000000;dashed=1;endArrow=open;endFill=0;endSize=8;labelBackgroundColor=#ffffff;fontSize=11;fontColor=#000000;" value="«include»" edge="1"><mxGeometry relative="1" as="geometry" /></mxCell><mxCell id="lr3-nash-28" parent="1" style="ellipse;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#000000;fontColor=#000000;fontSize=12;" value="Оформить пропуск" vertex="1"><mxGeometry x="230" y="950" width="220" height="60" as="geometry" /></mxCell><mxCell id="lr3-nash-29" parent="1" style="ellipse;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#000000;fontColor=#000000;fontSize=12;" value="Назначить уровень доступа" vertex="1"><mxGeometry x="620" y="950" width="220" height="60" as="geometry" /></mxCell><mxCell id="lr3-nash-30" parent="1" style="ellipse;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#000000;fontColor=#000000;fontSize=12;" value="Заблокировать пропуск" vertex="1"><mxGeometry x="230" y="1050" width="220" height="60" as="geometry" /></mxCell><mxCell id="lr3-nash-31" parent="1" style="ellipse;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#000000;fontColor=#000000;fontSize=12;" value="«CRUD» Сотрудник" vertex="1"><mxGeometry x="230" y="1150" width="220" height="60" as="geometry" /></mxCell><mxCell id="lr3-nash-32" parent="1" style="ellipse;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#000000;fontColor=#000000;fontSize=12;" value="Настроить зоны и двери" vertex="1"><mxGeometry x="230" y="1250" width="220" height="60" as="geometry" /></mxCell><mxCell id="lr3-nash-33" parent="1" style="ellipse;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#000000;fontColor=#000000;fontSize=12;" value="Устранить неисправность оборудования" vertex="1"><mxGeometry x="620" y="1150" width="240" height="70" as="geometry" /></mxCell><mxCell id="lr3-nash-34" parent="1" source="lr3-nash-28" target="lr3-nash-29" style="edgeStyle=none;html=1;rounded=0;strokeColor=#000000;dashed=1;endArrow=open;endFill=0;endSize=8;labelBackgroundColor=#ffffff;fontSize=11;fontColor=#000000;" value="«include»" edge="1"><mxGeometry relative="1" as="geometry" /></mxCell><mxCell id="lr3-nash-35" parent="1" source="lr3-nash-3" target="lr3-nash-7" style="edgeStyle=none;html=1;rounded=0;strokeColor=#000000;endArrow=none;" value="" edge="1"><mxGeometry relative="1" as="geometry" /></mxCell><mxCell id="lr3-nash-36" parent="1" source="lr3-nash-4" target="lr3-nash-20" style="edgeStyle=none;html=1;rounded=0;strokeColor=#000000;endArrow=none;" value="" edge="1"><mxGeometry relative="1" as="geometry" /></mxCell><mxCell id="lr3-nash-37" parent="1" source="lr3-nash-4" target="lr3-nash-22" style="edgeStyle=none;html=1;rounded=0;strokeColor=#000000;endArrow=none;" value="" edge="1"><mxGeometry relative="1" as="geometry" /></mxCell><mxCell id="lr3-nash-38" parent="1" source="lr3-nash-4" target="lr3-nash-23" style="edgeStyle=none;html=1;rounded=0;strokeColor=#000000;endArrow=none;" value="" edge="1"><mxGeometry relative="1" as="geometry" /></mxCell><mxCell id="lr3-nash-39" parent="1" source="lr3-nash-5" target="lr3-nash-28" style="edgeStyle=none;html=1;rounded=0;strokeColor=#000000;endArrow=none;" value="" edge="1"><mxGeometry relative="1" as="geometry" /></mxCell><mxCell id="lr3-nash-40" parent="1" source="lr3-nash-5" target="lr3-nash-30" style="edgeStyle=none;html=1;rounded=0;strokeColor=#000000;endArrow=none;" value="" edge="1"><mxGeometry relative="1" as="geometry" /></mxCell><mxCell id="lr3-nash-41" parent="1" source="lr3-nash-5" target="lr3-nash-31" style="edgeStyle=none;html=1;rounded=0;strokeColor=#000000;endArrow=none;" value="" edge="1"><mxGeometry relative="1" as="geometry" /></mxCell><mxCell id="lr3-nash-42" parent="1" source="lr3-nash-5" target="lr3-nash-32" style="edgeStyle=none;html=1;rounded=0;strokeColor=#000000;endArrow=none;" value="" edge="1"><mxGeometry relative="1" as="geometry" /></mxCell><mxCell id="lr3-nash-43" parent="1" source="lr3-nash-5" target="lr3-nash-33" style="edgeStyle=none;html=1;rounded=0;strokeColor=#000000;endArrow=none;" value="" edge="1"><mxGeometry relative="1" as="geometry" /></mxCell><mxCell id="lr3-nash-44" parent="1" source="lr3-nash-6" target="lr3-nash-25" style="edgeStyle=none;html=1;rounded=0;strokeColor=#000000;endArrow=none;" value="" edge="1"><mxGeometry relative="1" as="geometry" /></mxCell></root></mxGraphModel></diagram>
 </mxfile>
